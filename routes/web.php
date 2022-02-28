@@ -17,3 +17,8 @@ Route::get('/soufiane',function(){
     return "<h1>Aabbo</h1>";
 
 });
+
+route::get('/{nbrs}',function($nbrs){
+    
+    return view('welcome',compact('nbrs'));
+});
