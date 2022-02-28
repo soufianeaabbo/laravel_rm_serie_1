@@ -22,3 +22,9 @@ route::get('/{nbrs}',function($nbrs){
     
     return view('welcome',compact('nbrs'));
 });
+
+route::get('/{a}/{b}',function($a,$b){
+    
+    return view('exo3',compact('a','b'));
+});
+
