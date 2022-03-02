@@ -23,8 +23,15 @@ route::get('/{nbrs}',function($nbrs){
     return view('welcome',compact('nbrs'));
 });
 
-route::get('/{a}/{b}',function($a,$b){
+// route::get('/{a}/{b}',function($a,$b){
     
-    return view('exo3',compact('a','b'));
+//     return view('exo3',compact('a','b'));
+// });
+
+route::get('/couleur/{c}',function($c){
+    return view('couleur',compact('c'));
+
 });
+
+
 
